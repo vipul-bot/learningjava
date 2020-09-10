@@ -1,16 +1,36 @@
 import java.util.Scanner;
-class greater_than{
-int x;
-public static void main(String [] args){
+class greater_three{
+int x,y,z;
+void check(){
 Scanner obj=new Scanner(System.in);
-greater_than X=new greater_than();
-System.out.println("input the number ");
-X.x=obj.nextInt();
-if(X.x>5){
-System.out.println("inputed number is greater than 5 is "+X.x);
+System.out.println("Enter the values : ");
+x=obj.nextInt();
+y=obj.nextInt();
+z=obj.nextInt();
+if(x>y){
+if(x>z){
+System.out.println("X is greatest : "+x);}
+}
+else if(y>z){
+if(y>x){
+System.out.println("Y is greatest : "+y);}
 }
 else{
-System.out.println("inputed number is less than 5 is "+X.x);
+System.out.println("Z is gretest : "+z);
 }
 }
+public static void main(String [] args){
+greater_three o=new greater_three();
+o.check();
+}
+
+
+
+
+
+
+
+
+
+
 }
